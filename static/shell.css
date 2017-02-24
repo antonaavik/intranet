@@ -23,6 +23,19 @@ body {
     background: var(--color-gray-lightest);
     color: var(--color-gray-darkest);
 }
+input, textarea, select, button {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: inherit;
+    font: inherit;
+}
+button {
+    padding: 0.75rem;
+}
+button span {
+    padding: 0 0.25rem;
+}
 a {
     color: var(--color-primary);
 }
@@ -160,6 +173,13 @@ h1,h2,h3,h4,h5,h6,ul,ol,table,p {
 }
 .btn--block + .btn--block {
     margin: 0.5rem 0 0;
+}
+
+/* Components -> Entry field */
+
+.entry-field {
+    width: 100%;
+    text-align: left;
 }
 
 /* Components -> Card */
