@@ -3,7 +3,8 @@
 :root {
     --color-primary: #0970c4;
     --color-primary-inverse: #fff;
-    --color-gray-dark: #111;
+    --color-gray-darkest: #111;
+    --color-gray-dark: #666;
     --color-gray-ligher: #ddd;
     --color-gray-lightest: #eee;
 }
@@ -19,7 +20,8 @@ html {
 body {
     margin: 0;
     font: 400 1rem/1.5em sans-serif;
-    color: var(--color-gray-dark);
+    background: var(--color-gray-lightest);
+    color: var(--color-gray-darkest);
 }
 a {
     color: var(--color-primary);
@@ -32,6 +34,15 @@ img {
 
 h1,h2,h3,h4,h5,h6,ul,ol,table,p {
     margin: 1rem;
+}
+
+/* Scalers */
+
+.small {
+    font-size: 0.875em;
+}
+.muted {
+    color: var(--color-gray-dark);
 }
 
 /* Helpers */
@@ -71,20 +82,59 @@ h1,h2,h3,h4,h5,h6,ul,ol,table,p {
     border-bottom-width: 1px;
 }
 
-/* Layout */
+/* Grid */
 
-.topbar-spacer,
-.topbar {
-    height: 48px;
+.wrapper {
+    max-width: 96rem;
+    margin: auto;
 }
-.topbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 48px;
-    background: var(--color-primary);
-    color: var(--color-primary-inverse);
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*
+    xs: 0
+    sm: 384+ (16rem)
+    md: 768+ (48rem)
+    lg: 1024+ (64rem)
+    xl: 1536+ (96rem)
+*/
+
+.col {
+    width: 100%;
+}
+@media(min-width: 16rem) {
+    .col-sm--8 {
+        width: 66.666666%;
+    }
+    .col-sm--4 {
+        width: 33.333333%;
+    }
+}
+@media(min-width: 48rem) {
+    .col-md--8 {
+        width: 66.666666%;
+    }
+    .col-md--4 {
+        width: 33.333333%;
+    }
+}
+@media(min-width: 64rem) {
+    .col-lg--8 {
+        width: 66.666666%;
+    }
+    .col-lg--4 {
+        width: 33.333333%;
+    }
+}
+@media(min-width: 96rem) {
+    .col-xl--8 {
+        width: 66.666666%;
+    }
+    .col-xl--4 {
+        width: 33.333333%;
+    }
 }
 
 /* Components */
@@ -114,10 +164,6 @@ h1,h2,h3,h4,h5,h6,ul,ol,table,p {
 
 /* Components -> Card */
 
-.cards {
-    overflow: hidden;
-    background: var(--color-gray-lightest);
-}
 .card {
     margin: 1rem;
     background: #fff;
@@ -128,4 +174,23 @@ h1,h2,h3,h4,h5,h6,ul,ol,table,p {
 }
 .card__block {
     overflow: hidden;
+}
+.card__block + .card__block {
+    border-top: 1px solid #ddd;
+}
+
+/* Layout */
+
+.topbar-spacer,
+.topbar {
+    height: 48px;
+}
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    background: var(--color-primary);
+    color: var(--color-primary-inverse);
 }
