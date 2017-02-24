@@ -19,7 +19,7 @@ html {
 }
 body {
     margin: 0;
-    font: 400 1rem/1.5em sans-serif;
+    font: 400 1rem/1.5 sans-serif;
     background: var(--color-gray-lightest);
     color: var(--color-gray-darkest);
 }
@@ -40,13 +40,15 @@ a {
     color: var(--color-primary);
 }
 img {
+    display: block;
     max-width: 100%;
 }
 
 /* Type */
 
 h1,h2,h3,h4,h5,h6,ul,ol,table,p {
-    margin: 1rem;
+    margin: 1em;
+    font-weight: inherit;
 }
 
 /* Scalers */
@@ -175,11 +177,64 @@ h1,h2,h3,h4,h5,h6,ul,ol,table,p {
     margin: 0.5rem 0 0;
 }
 
+/* Components -> Stamp */
+
+.stamp {
+    width: 4rem;
+    border-radius: 50%;
+    background: green;
+    text-align: center;
+}
+.stamp span {
+    position: relative;
+    display: block;
+    padding-bottom: 100%;
+}
+.stamp img {
+    position: absolute;
+
+    width: 100%;
+    border-radius: 50%;
+}
+
 /* Components -> Entry field */
 
 .entry-field {
     width: 100%;
     text-align: left;
+}
+
+/* Components -> media */
+
+.media {
+    margin: 1rem;
+}
+.media > * {
+    margin: 0;
+}
+.media a {
+    text-decoration: none;
+}
+.media__stamp {
+    float: left;
+    width: 3rem;
+    margin-right: 0.5rem;
+}
+
+/* Components -> section */
+
+.section {
+    margin: 1rem;
+}
+.section__header {
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+.section__title {
+    margin: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
 }
 
 /* Components -> Card */

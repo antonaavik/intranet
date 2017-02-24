@@ -1,11 +1,11 @@
 {
     "manifest_version": 1,
-    "version": "1.1.0",
+    "version": "1.2.0",
     "name": "Intranet",
     "short_name": "Codemolecule",
     "default_locale": "en",
     "background_color": "#0970c4",
-    "theme_color": "#ffffff",
+    "theme_color": "#0970c4",
     "start_url": "/",
     "display": "standalone",
     "orientation": "portrait",
