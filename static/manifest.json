@@ -1,0 +1,29 @@
+{
+    "manifest_version": 1,
+    "version": "1.0.0",
+    "name": "Intranet 1",
+    "short_name": "Intranet 2",
+    "default_locale": "en",
+    "background_color": "#0970c4",
+    "theme_color": "#fff",
+    "icons": [
+        {
+            "src": "assets/icon-48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "assets/icon-96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "assets/icon-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait"
+}
