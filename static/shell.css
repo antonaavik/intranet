@@ -47,7 +47,7 @@ img {
 /* Type */
 
 h1,h2,h3,h4,h5,h6,ul,ol,table,p {
-    margin: 1em;
+    margin: 1em 1rem 1rem;
     font-weight: inherit;
 }
 
@@ -158,11 +158,11 @@ h1,h2,h3,h4,h5,h6,ul,ol,table,p {
 
 .btn {
     display: inline-block;
-    padding: 0.75rem;
+    padding: 0.75em;
 }
 .btn span {
     display: block;
-    margin: 0 0.25rem;
+    margin: 0 0.25em;
 }
 .btn--primary {
     background: var(--color-primary);
@@ -175,6 +175,9 @@ h1,h2,h3,h4,h5,h6,ul,ol,table,p {
 }
 .btn--block + .btn--block {
     margin: 0.5rem 0 0;
+}
+.btn--small {
+    font-size: 0.8em;
 }
 
 /* Components -> Stamp */
@@ -223,9 +226,6 @@ h1,h2,h3,h4,h5,h6,ul,ol,table,p {
 
 /* Components -> section */
 
-.section {
-    margin: 1rem;
-}
 .section__header {
     overflow: hidden;
     border-bottom: 1px solid #ddd;
