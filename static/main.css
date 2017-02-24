@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+}
+
+.topbar-spacer,
+.topbar {
+    height: 48px;
+}
+.topbar {
+    height: 48px;
+    background: #0970c4;
+}
