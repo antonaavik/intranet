@@ -1,8 +1,8 @@
 {
     "manifest_version": 1,
     "version": "1.0.0",
-    "name": "Codemolecule 1",
-    "short_name": "Codemolecule 2",
+    "name": "Codemolecule Intranet",
+    "short_name": "Codemolecule",
     "default_locale": "en",
     "background_color": "#ffffff",
     "theme_color": "#0970c4",
