@@ -211,6 +211,7 @@ h1,h2,h3,h4,h5,h6,ul,ol,table,p {
 
 .media {
     margin: 1rem;
+    line-height: 1.25;
 }
 .media > * {
     margin: 0;
