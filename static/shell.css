@@ -4,6 +4,7 @@
     --color-primary: #0970c4;
     --color-primary-inverse: #fff;
     --color-gray-dark: #111;
+    --color-gray-light: #eee;
 }
 
 /* Root */
@@ -19,6 +20,12 @@ body {
     font: 400 1rem/1.5em sans-serif;
     color: var(--color-gray-dark);
 }
+a {
+    color: var(--color-primary);
+}
+img {
+    max-width: 100%;
+}
 
 /* Type */
 
@@ -26,11 +33,30 @@ h1,h2,h3,h4,h5,h6,ul,ol,table,p {
     margin: 1rem;
 }
 
-/* General */
+/* Helpers */
 
-a {
-    color: var(--color-primary);
+.list-unstyled {
+    padding: 0;
+    list-style: none;
 }
+.list-inline {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.75rem;
+}
+.list-inline li {
+    margin: 0.25rem;
+}
+.list-no-margin,
+.list-no-margin li {
+    margin: 0;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+/* Layout */
 
 .topbar-spacer,
 .topbar {
@@ -54,6 +80,10 @@ a {
     display: inline-block;
     padding: 0.75rem;
 }
+.btn span {
+    display: block;
+    margin: 0 0.25rem;
+}
 .btn--primary {
     background: var(--color-primary);
     color: var(--color-primary-inverse);
@@ -69,6 +99,10 @@ a {
 
 /* Components -> Card */
 
+.cards {
+    overflow: hidden;
+    background: var(--color-gray-light);
+}
 .card {
     margin: 1rem;
     box-shadow: 0 0 5px rgba(0,0,0,.4);
