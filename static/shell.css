@@ -1,0 +1,81 @@
+/* variables */
+
+:root {
+    --color-primary: #0970c4;
+    --color-primary-inverse: #fff;
+    --color-gray-dark: #111;
+}
+
+/* Root */
+
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    font: 400 1rem/1.5em sans-serif;
+    color: var(--color-gray-dark);
+}
+
+/* Type */
+
+h1,h2,h3,h4,h5,h6,ul,ol,table,p {
+    margin: 1rem;
+}
+
+/* General */
+
+a {
+    color: var(--color-primary);
+}
+
+.topbar-spacer,
+.topbar {
+    height: 48px;
+}
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    background: var(--color-primary);
+    color: var(--color-primary-inverse);
+}
+
+/* Components */
+
+/* Components -> Buttons */
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem;
+}
+.btn--primary {
+    background: var(--color-primary);
+    color: var(--color-primary-inverse);
+    text-decoration: none;
+}
+.btn--block {
+    width: 100%;
+    text-align: center;
+}
+.btn--block + .btn--block {
+    margin: 0.5rem 0 0;
+}
+
+/* Components -> Card */
+
+.card {
+    margin: 1rem;
+    box-shadow: 0 0 5px rgba(0,0,0,.4);
+}
+.card__cover {
+    margin: 0;
+}
+.card__block {
+    overflow: hidden;
+}
